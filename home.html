@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Nixito learning dashboard.">
+  <title>Nixito — Home</title>
+  <link rel="stylesheet" href="screen-styles/home.css?v=20260715-33">
+  <link rel="stylesheet" href="screen-styles/viewport.css?v=20260715-1">
+  <script src="screen-fit.js?v=20260715-1"></script>
+</head>
+<body class="screen-body">
+  <main class="app-screen" aria-label="Nixtio home screen">
+    <header class="app-header">
+      <div class="header-actions" aria-label="Header actions">
+        <button class="icon-button notification-button" type="button" aria-label="Notifications">
+          <span class="notification-dot" aria-hidden="true"></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 2.42385C13.2178 2.14933 12.3764 2 11.5 2C7.34413 2 3.97513 5.35786 3.97513 9.5C3.97503 10.5718 3.91272 11.5793 3.28561 12.5029C2.80684 13.1995 2.16061 13.9129 2.02992 14.7696C1.81727 16.1636 2.768 17.1312 3.93205 17.6134C8.39481 19.4622 14.6052 19.4622 19.0679 17.6134C20.232 17.1312 21.1827 16.1636 20.9701 14.7696C20.8702 14.1149 20.4692 13.5438 20.0719 13"/>
+            <path d="M9 2.42385C9.7822 2.14933 10.6236 2 11.5 2C15.6559 2 19.0249 5.35786 19.0249 9.5C19.025 10.5718 19.0873 11.5793 19.7144 12.5029C20.1932 13.1995 20.8394 13.9129 20.9701 14.7696C21.1827 16.1636 20.232 17.1312 19.0679 17.6134C14.6052 19.4622 8.3948 19.4622 3.9321 17.6134C2.768 17.1312 1.8173 16.1636 2.0299 14.7696C2.1298 14.1149 2.5308 13.5438 2.9281 13"/>
+            <path d="M7.5 19C7.95849 20.7252 9.57553 22 11.5 22C13.4245 22 15.0415 20.7252 15.5 19"/>
+          </svg>
+        </button>
+        <div class="brand-mark" aria-label="Nixtio">
+          <svg viewBox="0 0 25.6 22.88" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5151 2.22444C15.5151 0.995917 16.518 0 17.7551 0H23.36C24.5971 0 25.6 0.995918 25.6 2.22445V20.6556C25.6 21.8841 24.5971 22.88 23.36 22.88H21.0328H16.4751H16.4365C15.8463 22.88 15.28 22.6487 14.8605 22.2364L0.758931 8.37279C0.27326 7.89531 0 7.24482 0 6.56615V2.22444C0 0.995917 1.00289 0 2.24001 0H3.87881H6.70475C7.37926 0 8.0265 0.264346 8.50584 0.735589L15.5151 7.62652V2.22444ZM0 15.2488C0 13.8371 1.71544 13.1265 2.72569 14.1197L5.81821 17.16L8.87172 20.162C9.88748 21.1606 9.17538 22.88 7.74605 22.88H1.60001C0.716348 22.88 0 22.1686 0 21.2911V15.2488Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      <h1>Hello, Nixtio!</h1>
+    </header>
+
+    <section class="summary" aria-label="Learning summary">
+      <article class="summary-card total-time">
+        <h2>Total time</h2>
+        <p>36:57</p>
+      </article>
+      <article class="summary-card progress-card">
+        <h2>Progress</h2>
+        <p>24.5%</p>
+      </article>
+    </section>
+
+    <button class="language-selector" type="button" aria-label="Selected language: Spanish">
+      <span>Spanish</span>
+      <span class="language-meta">
+        <img class="flag" src="assets/home/image.png" alt="Spain flag">
+        <svg class="chevron" viewBox="0 0 9 5" aria-hidden="true"><path d="M8.00003 0.500062C8.00003 0.500062 5.23822 4.25003 4.25003 4.25003C3.26178 4.25003 0.500031 0.500031 0.500031 0.500031"/></svg>
+      </span>
+    </button>
+
+    <section class="week-progress" aria-labelledby="week-progress-title">
+      <h2 id="week-progress-title">Week progress</h2>
+      <div class="progress-chart" aria-label="Progress from Monday 11 through Sunday 17">
+        <div class="dot-columns" aria-hidden="true">
+          <div class="dot-column mon">
+            <span class="dot striped purple"></span><span class="dot solid purple"></span><span class="dot solid purple"></span><span class="dot striped purple"></span>
+          </div>
+          <div class="dot-column tue">
+            <span class="dot striped purple"></span><span class="dot solid purple"></span><span class="dot outline purple"></span><span class="dot solid purple"></span><span class="dot solid purple"></span>
+          </div>
+          <div class="dot-column wed">
+            <span class="dot solid purple"></span><span class="dot solid purple"></span><span class="dot solid purple"></span>
+          </div>
+          <div class="dot-column thu">
+            <span class="dot solid purple"></span><span class="dot striped purple"></span><span class="dot striped purple"></span><span class="dot solid purple"></span>
+          </div>
+          <div class="dot-column fri">
+            <span class="dot striped amber"></span><span class="dot outline amber"></span><span class="dot solid amber"></span><span class="dot solid amber"></span><span class="dot striped amber"></span>
+          </div>
+          <div class="dot-column sat">
+            <span class="dot solid purple"></span><span class="dot solid purple"></span><span class="dot solid purple"></span><span class="dot outline purple"></span>
+          </div>
+          <div class="dot-column sun">
+            <span class="dot solid purple"></span><span class="dot solid purple"></span><span class="dot outline purple"></span><span class="dot striped purple"></span><span class="dot solid purple"></span>
+          </div>
+        </div>
+        <div class="date-row">
+          <time datetime="2026-05-11"><span>Mon</span><strong>11</strong></time>
+          <time datetime="2026-05-12"><span>Tue</span><strong>12</strong></time>
+          <time datetime="2026-05-13"><span>Wed</span><strong>13</strong></time>
+          <time datetime="2026-05-14"><span>Thu</span><strong>14</strong></time>
+          <time class="active" datetime="2026-05-15"><span>Fri</span><strong>15</strong></time>
+          <time datetime="2026-05-16"><span>Sat</span><strong>16</strong></time>
+          <time datetime="2026-05-17"><span>Sun</span><strong>17</strong></time>
+        </div>
+      </div>
+    </section>
+
+    <nav class="bottom-navigation" aria-label="Primary navigation">
+      <button class="nav-button active" type="button" aria-label="Home">
+        <svg class="home-icon" viewBox="0 0 20 22" aria-hidden="true"><path d="M4.83857 3.51364L3.83856 4.29453C2.32191 5.47887 1.56357 6.07105 1.15683 6.90601C0.750092 7.74097 0.750092 8.70552 0.750092 10.6346V12.7267C0.750092 16.513 0.750091 18.4062 1.92166 19.5825C2.86475 20.5293 4.27052 20.714 6.75009 20.75V16.7557C6.75009 15.8238 6.75009 15.3578 6.90233 14.9903C7.10532 14.5002 7.49467 14.1109 7.98469 13.9079C8.35229 13.7557 8.81819 13.7557 9.75009 13.7557C10.682 13.7557 11.1479 13.7557 11.5155 13.9079C12.0055 14.1109 12.3949 14.5002 12.5979 14.9903C12.7501 15.3578 12.7501 15.8238 12.7501 16.7557V20.75C15.2297 20.714 16.6354 20.5293 17.5785 19.5825C18.7501 18.4062 18.7501 16.513 18.7501 12.7267V10.6346C18.7501 8.70552 18.7501 7.74097 18.3434 6.90601C17.9366 6.07105 17.1783 5.47887 15.6616 4.29453L14.6616 3.51364C12.3022 1.67121 11.1225 0.75 9.75009 0.75C8.37769 0.75 7.19796 1.67121 4.83857 3.51364Z"/></svg>
+      </button>
+      <button class="nav-button" type="button" aria-label="Courses">
+        <svg class="bookmark-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 17.9808V12.7075C3 9.07416 3 7.25748 4.09835 6.12874C5.1967 5 6.96447 5 10.5 5C14.0355 5 15.8033 5 16.9017 6.12874C18 7.25748 18 9.07416 18 12.7075V17.9808C18 20.2867 18 21.4396 17.2755 21.8523C15.8724 22.6514 13.2405 19.9852 11.9906 19.1824C11.2657 18.7168 10.9033 18.484 10.5 18.484C10.0967 18.484 9.73425 18.7168 9.00938 19.1824C7.7595 19.9852 5.12763 22.6514 3.72454 21.8523C3 21.4396 3 20.2867 3 17.9808Z"/>
+          <path class="bookmark-back" d="M9 2H11C15.714 2 18.0711 2 19.5355 3.46447C21 4.92893 21 7.28595 21 12V18"/>
+        </svg>
+      </button>
+      <button class="nav-button" type="button" aria-label="Favorites">
+        <svg class="star-icon" viewBox="0 0 22 22" aria-hidden="true"><path d="M12.4791 2.19418L14.2389 5.74288C14.4789 6.23687 15.1188 6.7107 15.6588 6.80143L18.8484 7.33575C20.8882 7.67853 21.3682 9.1706 19.8983 10.6425L17.4186 13.1427C16.9986 13.5661 16.7687 14.3827 16.8986 14.9675L17.6086 18.0625C18.1685 20.5123 16.8786 21.46 14.7289 20.1796L11.7392 18.3952C11.1993 18.0726 10.3094 18.0726 9.75936 18.3952L6.76973 20.1796C4.62996 21.46 3.33011 20.5022 3.89005 18.0625L4.59997 14.9675C4.72995 14.3827 4.49998 13.5661 4.08002 13.1427L1.6003 10.6425C0.140464 9.1706 0.610414 7.67853 2.65018 7.33575L5.83983 6.80143C6.36977 6.7107 7.0097 6.23687 7.24967 5.74288L9.00946 2.19418C9.96936 0.268607 11.5292 0.268607 12.4791 2.19418Z"/></svg>
+      </button>
+      <button class="nav-button" type="button" aria-label="Play">
+        <svg class="bottom-play-icon" viewBox="0 0 16 17" aria-hidden="true"><path d="M14.6406 9.09606C14.2871 10.4391 12.6167 11.3881 9.2757 13.2862C6.046 15.121 4.4312 16.0385 3.12983 15.6697C2.5918 15.5172 2.10159 15.2277 1.70624 14.8288C0.75 13.864 0.75 11.9927 0.75 8.25006C0.75 4.50746 0.75 2.63616 1.70624 1.67138C2.10159 1.27251 2.5918 0.982941 3.12983 0.830481C4.4312 0.461711 6.046 1.37913 9.2757 3.21399C12.6167 5.11203 14.2871 6.06106 14.6406 7.40406C14.7865 7.95846 14.7865 8.54166 14.6406 9.09606Z"/></svg>
+      </button>
+    </nav>
+  </main>
+</body>
+</html>

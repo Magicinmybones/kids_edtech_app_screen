@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Mont";
+  src: url("../assets/start/fonts/Mont-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("../assets/login/fonts/Mont-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("../assets/start/fonts/Mont-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:host,
+:root {
+  color: #050505;
+  font-family: Mont, "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+.screen-body {
+  min-width: 390px;
+  min-height: 100vh;
+  margin: 0;
+  background: #151515;
+}
+
+.onboarding {
+  position: relative;
+  isolation: isolate;
+  width: 390px;
+  height: 844px;
+  margin: auto;
+  overflow: visible;
+  background: #babfba;
+}
+
+.robot {
+  position: absolute;
+  z-index: 1;
+  top: 298px;
+  left: 0;
+  width: 390px;
+  height: 546px;
+  object-fit: fill;
+  display: block;
+}
+
+.progress {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 35px;
+  gap: 6px;
+  align-items: center;
+  height: 4px;
+  width: 321px;
+}
+
+.progress span {
+  display: block;
+  width: 103px;
+  height: 4px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, .2);
+}
+
+.progress .is-active { background: #050505; }
+
+.app-icon {
+  position: absolute;
+  z-index: 3;
+  top: 313px;
+  left: 332px;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transform: none;
+}
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  top: 111px;
+  left: 40px;
+  width: 310px;
+  margin: 0;
+  font-family: "Mont", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 52px;
+}
+
+.cta {
+  position: absolute;
+  z-index: 2;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  height: 58px;
+  border: 0;
+  border-radius: 999px;
+  color: white;
+  background: #000;
+  font: 500 20px/24px Mont, "Arial Rounded MT Bold", Arial, sans-serif;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease;
+}
+
+.cta:hover { background: #191919; }
+.cta:active { transform: scale(.97); }
+.cta:focus-visible { outline: 2px solid white; outline-offset: -5px; }
+
+@media (min-width: 391px) { .screen-body { display: grid; place-items: center; } }

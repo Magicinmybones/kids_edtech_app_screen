@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Nixito multiple-choice exercise screen.">
+  <title>Nixito — Exercise</title>
+  <link rel="stylesheet" href="screen-styles/exercise.css?v=20260715-33">
+  <link rel="stylesheet" href="screen-styles/viewport.css?v=20260715-1">
+  <script src="screen-fit.js?v=20260715-1"></script>
+</head>
+<body class="screen-body">
+  <main class="exercise-screen" aria-label="Multiple choice exercise">
+    <img class="screen-background" src="assets/exercise/images/background.png" alt="">
+
+    <div class="time-pill" aria-label="Time left: 04:57">
+      <span>Time left: <strong>04:57</strong></span>
+    </div>
+
+    <h1 class="exercise-title">Choose the correct<br>answer</h1>
+
+    <div class="bee-stage" aria-hidden="true">
+      <img class="bee-artwork" src="assets/exercise/images/bee.png" alt="">
+    </div>
+
+    <section class="question-panel" aria-labelledby="question-text">
+      <h2 id="question-text" class="question-text">What does a bee use<br>to fly?</h2>
+
+      <div class="answer-grid" aria-label="Answer choices">
+        <button class="answer-choice" type="button">Sea</button>
+        <button class="answer-choice answer-choice--selected" type="button">Wings</button>
+        <button class="answer-choice" type="button">Jump</button>
+        <button class="answer-choice" type="button">Hat</button>
+      </div>
+    </section>
+
+    <button class="next-button" type="button">Next</button>
+  </main>
+</body>
+</html>

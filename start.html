@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#babfba">
+  <meta name="description" content="Rovio onboarding screen.">
+  <title>Rovio — Get Started</title>
+  <link rel="stylesheet" href="screen-styles/start.css?v=20260715-33">
+  <link rel="stylesheet" href="screen-styles/viewport.css?v=20260715-1">
+  <script src="screen-fit.js?v=20260715-1"></script>
+</head>
+<body class="screen-body">
+  <main class="onboarding" aria-labelledby="headline">
+    <img class="robot" src="assets/start/image.png" alt="">
+    <nav class="progress" aria-label="Onboarding progress">
+      <span></span><span></span><span class="is-active"></span>
+    </nav>
+    <img class="app-icon" src="assets/start/image%20copy%202.png" alt="">
+    <h1 id="headline">Speak the World’s<br>Language!</h1>
+    <button class="cta" type="button">Get started</button>
+  </main>
+  <script>
+    document.querySelector('.cta').addEventListener('click', (event) => {
+      event.currentTarget.textContent = 'Let’s go!';
+      event.currentTarget.setAttribute('aria-label', 'Getting started');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Mont";
+  src: url("../assets/login/fonts/Mont-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("../assets/login/fonts/Mont-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:host,
+:root {
+  --page: #ffffff;
+  --ink: #000000;
+  --muted: rgba(77, 77, 77, 0.6);
+  --border: #dfd5c9;
+  --pill-radius: 100px;
+  --card-radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:host,
+.screen-body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+.screen-body {
+  display: grid;
+  place-items: start center;
+  overflow-x: auto;
+  background: #ececec;
+  color: var(--ink);
+  font-family: "Mont", Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-screen {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  flex: 0 0 390px;
+  overflow: hidden;
+  background: var(--page) url("../assets/login/images/login-background.png") center / cover no-repeat;
+}
+
+.login-panel {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  z-index: 2;
+  display: flex;
+  width: 310px;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  width: 275px;
+  height: 72px;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+
+.form-fields {
+  display: flex;
+  width: 310px;
+  height: 210px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-group {
+  display: flex;
+  width: 310px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.field-group label {
+  height: 20px;
+  padding-left: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.field-shell {
+  display: flex;
+  width: 310px;
+  height: 54px;
+  align-items: center;
+  padding: 16px 28px 16px 24px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+}
+
+.field-shell input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  pointer-events: none;
+}
+
+.password-section {
+  display: flex;
+  width: 310px;
+  height: 116px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.password-group {
+  height: 80px;
+}
+
+.password-shell {
+  height: 56px;
+  justify-content: space-between;
+}
+
+.password-shell input {
+  width: 175px;
+  padding-top: 5px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.visibility-icon {
+  flex: 0 0 auto;
+  color: var(--ink);
+}
+
+.forgot-password {
+  width: 127px;
+  height: 20px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.login-button {
+  display: flex;
+  width: 310px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 0;
+  border: 0;
+  border-radius: var(--pill-radius);
+  background: var(--ink);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.robot-gallery {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.robot-card {
+  position: absolute;
+  width: 80px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  background: #d9d9d9;
+  transform-origin: center;
+}
+
+.robot-card img {
+  position: absolute;
+  display: block;
+  max-width: none;
+  object-fit: fill;
+  transform-origin: 0 0;
+}
+
+.card-ant {
+  top: 534.89px;
+  left: -44.94px;
+  transform: rotate(10deg);
+}
+
+.card-ant img {
+  top: -10.1573px;
+  left: -21.1976px;
+  width: 153.3427px;
+  height: 114.802px;
+  transform: rotate(5deg);
+}
+
+.card-orange {
+  top: 567.72px;
+  left: 55.36px;
+  transform: rotate(5deg);
+}
+
+.card-orange img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 29%;
+  transform: none;
+}
+
+.card-tractor {
+  top: 601px;
+  left: 156px;
+}
+
+.card-tractor img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 51% center;
+  transform: none;
+}
+
+.card-runner {
+  top: 567.72px;
+  left: 247.36px;
+  transform: rotate(-5deg);
+}
+
+.card-runner img {
+  top: -36px;
+  left: -67px;
+  width: 269px;
+  height: 201px;
+}
+
+.card-koala {
+  top: 534.89px;
+  left: 339.06px;
+  transform: rotate(-10deg);
+}
+
+.card-koala img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% center;
+  transform: none;
+}
+
+.signup-copy {
+  position: absolute;
+  top: 784px;
+  left: 118px;
+  z-index: 2;
+  width: 155px;
+  height: 20px;
+  margin: 0;
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.signup-copy span {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 389px) {
+    .screen-body {
+    place-items: start;
+  }
+}
