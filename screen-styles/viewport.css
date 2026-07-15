@@ -19,7 +19,7 @@ body.screen-body {
   margin: 0;
   overflow: hidden !important;
   display: grid !important;
-  place-items: center !important;
+  place-items: start center !important;
 }
 
 body.screen-body > .app-screen,
@@ -29,6 +29,6 @@ body.screen-body > .exercise-screen {
   height: 844px;
   margin: 0;
   transform: scale(var(--viewport-scale));
-  transform-origin: center;
+  transform-origin: top center;
   will-change: transform;
 }
